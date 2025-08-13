@@ -4,25 +4,25 @@
 # FRONTEND (Next.js/React)
 # ================================
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
+# dependencies - ONLY in frontend folder
+frontend/node_modules/
+frontend/.pnp
+frontend/.pnp.*
+frontend/.yarn/*
+!frontend/.yarn/patches
+!frontend/.yarn/plugins
+!frontend/.yarn/releases
+!frontend/.yarn/versions
 
-# testing
-/coverage
+# testing - ONLY in frontend folder
+frontend/coverage/
 
-# next.js
-/.next/
-/out/
+# next.js - ONLY in frontend folder
+frontend/.next/
+frontend/out/
 
-# production
-/build
+# production - ONLY in frontend folder
+frontend/build/
 
 # misc
 .DS_Store
