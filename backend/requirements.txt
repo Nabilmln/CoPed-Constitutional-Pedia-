@@ -1,0 +1,34 @@
+# 🤖 Indonesian Constitutional Law Chatbot - Production Requirements
+# Complete dependencies for both Native Multi-Document RAG and LangChain Enhanced RAG
+
+# ===== CORE AI & GOOGLE INTEGRATION =====
+google-generativeai>=0.8.0
+python-dotenv>=1.0.0
+
+# ===== DOCUMENT PROCESSING =====
+PyPDF2>=3.0.0
+pypdf>=4.2.0
+
+# ===== LANGCHAIN RAG SYSTEM =====
+# Core LangChain framework
+langchain>=0.1.20
+langchain-community>=0.0.38
+langchain-google-genai>=1.0.3
+langchain-text-splitters>=0.0.1
+
+# ===== VECTOR DATABASE & EMBEDDINGS =====
+chromadb>=0.4.24
+sentence-transformers>=2.7.0
+faiss-cpu>=1.7.4
+
+# ===== DATA PROCESSING =====
+numpy>=1.24.0
+pandas>=2.0.0
+
+# ===== OPTIONAL ENHANCEMENTS =====
+tiktoken>=0.6.0        # Token counting for text analysis
+unstructured>=0.13.0   # Advanced document parsing
+
+# ===== SYSTEM UTILITIES =====
+# Required for caching and file operations (built-in dependencies)
+# hashlib, json, os, datetime - included in Python standard library
