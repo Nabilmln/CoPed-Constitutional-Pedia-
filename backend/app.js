@@ -7,6 +7,7 @@ const connectDB = require("./config/database");
 
 // Import routes
 const authRouter = require("./routes/authRoutes");
+const chatRoute = require("./routes/chatRoutes");
 
 const app = express();
 
@@ -48,6 +49,7 @@ app.get("/", (req, res) => {
     environment: process.env.NODE_ENV || "development",
     endpoints: {
       auth: "/api/auth",
+      // chat: "/api/chat",
       health: "/api/health",
     },
   });
@@ -55,6 +57,7 @@ app.get("/", (req, res) => {
 
 // API routes
 app.use("/api/auth", authRouter);
+app.use("/api/chat", chatRoute);
 
 // Health check endpoint
 app.get("/api/health", (req, res) => {

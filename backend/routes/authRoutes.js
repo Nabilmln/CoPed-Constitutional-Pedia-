@@ -9,7 +9,6 @@ authRouter.post("/login", authController.login);
 
 // Protected routes
 authRouter.get("/me", protect, authController.getMe);
-authRouter.put("/profile", protect, authController.updateProfile);
 
 // Admin only routes (example)
 // authRouter.get("/users", protect, authorize('admin'), authController.getAllUsers);
